@@ -1,39 +1,110 @@
+/* Reset and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  
+  /* Global Styles */
   body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    background-color: #f9f9f9;
     line-height: 1.6;
+    padding: 20px;
   }
   
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  header, footer {
-    background: #333;
-    color: #fff;
-    padding: 20px;
+  /* Header */
+  header {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
     text-align: center;
   }
   
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Navigation */
   nav {
-    background: #444;
-    padding: 10px;
+    background-color: #444;
+    padding: 10px 20px;
+    text-align: center;
   }
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
   }
-  nav ul li {
-    display: inline;
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings and Paragraphs */
+  h2 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    nav a {
+      margin: 10px 0;
+    }
+  
+    main {
+      margin: 20px;
+      padding: 15px;
+    }
   }
